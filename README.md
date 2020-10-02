@@ -20,3 +20,9 @@ We'll use Markdown to write documentation content. We'll also use the [gh-pages 
 4. Commit changes to source code and push as desired
 5. When ready to publish documentation, carry out a Hugo site build and push built pages up to fork on the gh-pages branch
 
+A step-by-step guide is provided in the [crash-course.md](./crash-course.md) file.
+
+## Resources
+
+- [git worktree](https://git-scm.com/docs/git-worktree)
+- [git submodule](https://www.git-scm.com/book/en/v2/Git-Tools-Submodules)
