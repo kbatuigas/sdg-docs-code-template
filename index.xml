@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Stellar Documentation</title>
+    <link>https://kbatuigas.github.io/sdg-docs-code-template/</link>
+    <description>Recent content on Stellar Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2020 19:35:06 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2020 20:16:54 -0400</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbatuigas.github.io/sdg-docs-code-template/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Get Started</title>
-      <link>http://example.org/get-started/</link>
-      <pubDate>Thu, 01 Oct 2020 19:35:06 -0400</pubDate>
+      <title>Welcome to Stellar&#39;s Documentation</title>
+      <link>https://kbatuigas.github.io/sdg-docs-code-template/</link>
+      <pubDate>Thu, 01 Oct 2020 20:16:54 -0400</pubDate>
       
-      <guid>http://example.org/get-started/</guid>
-      <description>This is the Getting Started section of Stellar&amp;rsquo;s documentation page.
-Fun!</description>
+      <guid>https://kbatuigas.github.io/sdg-docs-code-template/</guid>
+      <description>Feel free to look around the different sections!</description>
     </item>
     
   </channel>
