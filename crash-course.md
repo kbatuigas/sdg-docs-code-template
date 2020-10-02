@@ -115,7 +115,7 @@ Your project pages should be live in a short while at the URL provided in your r
 1. Remove worktree
 ```
 git checkout main
-git worktree prune
+git worktree remove public
 ```
 2. Commit desired updates in `main` and push up to remote.
 3. Add the worktree with the `gh-pages` branch again for the `public` subdirectory.
