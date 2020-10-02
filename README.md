@@ -16,15 +16,15 @@ Having `gh-pages` as the source branch for GitHub Pages (separate from your main
 
 ## How to use this repository
 
-This has been marked as a ["template" repository](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
+This has been marked as a ["template" repository](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template). 
 
 1. Fork the repository
-2. Clone the fork locally on your machine
+2. Clone the fork locally on your machine (copy the `main` branch **only**)
 3. Build out the Hugo site/project within the repository
 4. Commit changes to source code and push as desired
 5. When ready to publish documentation, carry out a Hugo site build and push built pages up to fork on the gh-pages branch
 
-A step-by-step guide is provided in the [crash-course.md](./crash-course.md) file.
+A step-by-step guide for building the docs site is provided in the [crash-course.md](./crash-course.md) file.
 
 ## Resources
 

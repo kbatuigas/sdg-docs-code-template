@@ -1,7 +1,9 @@
+(Remember to replace `kbatuigas` below with your GitHub username)
+
 ## Setup
 
 1. Navigate to template at [https://github.com/kbatuigas/sdg-docs-code-template](https://github.com/kbatuigas/sdg-docs-code-template)
-2. Click "Fork"
+2. Click "Fork" (do not select "Include all branches"; you'll only need the default branch right now and will be creating an additional branch later)
 3. Using the command line, clone the fork
 ```
 git clone https://github.com/kbatuigas/sdg-docs-code-template.git
@@ -11,7 +13,7 @@ git clone https://github.com/kbatuigas/sdg-docs-code-template.git
 git remote add origin https://github.com/kbatuigas/sdg-course-docs-code.git
 ```
 
-For the sake of a simple demo, these steps assume that you're doing all development work (including docs writing) on the `main` branch. You can try creating a feature branch if you like.
+For the sake of a simple demo, these steps assume that you're doing all development work (including docs writing) on the `main` branch. 
 
 ## Create a new Hugo site
 
@@ -61,9 +63,11 @@ git push origin main
 
 ## Deploy to GitHub Pages
 
-1. In `config.toml`, change the baseURL value to the URL of your project page, and make sure to save this with a commit.
+1. In `config.toml`, change the `baseURL` value to the URL of your project page, and make sure to save this with a commit.
 
-    What happens if your value looks like this?: `<USERNAME>.github.io/<PROJECT>/`
+```
+https://kbatuigas.github.io/sdg-docs-code-template/
+```
 
 2. When you're happy with how the site looks locally, do a build:
 ```
@@ -71,7 +75,7 @@ hugo
 ```
     
 This creates a `public` directory that contains the generated static files for your docs site.
-3. Add `public` to `.gitignore`
+3. Check that you have a `.gitignore` file within `docs`. If you don't, the following will create the file and add `public` to `.gitignore`:
 ```
 echo "public" >> .gitignore
 ```
