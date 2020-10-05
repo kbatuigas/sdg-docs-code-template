@@ -38,8 +38,14 @@ git commit -m "Add Hugo site"
     ```
     hugo new get-started/index.md
     ```
-    - Modify the .md file as desired
-    - What happens if you run `hugo server -D`?
+    - In the new `index.md` file, make sure that the [front matter](https://gohugo.io/content-management/front-matter/) contains the following:
+    ```
+    draft: false
+    weight: 1
+    ```
+    (You can change the `title` if you prefer, and `date` can be deleted if you like)
+    - You can then add in your content in the .md file as desired
+    - What happens if you run `hugo server`? (You should not )
 5. Add the [DocDock theme](https://docdock.netlify.app/)
 ```
 git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock
@@ -54,7 +60,9 @@ git submodule update
 theme = "docdock"
 ```
 
-You should now have a very basic site that you can view locally by running `hugo server`.
+You should now have a very basic site that you can view locally by running `hugo server` and pointing your browser to where the web server is running (the `hugo server` output will provide the address - default is `http://localhost:1313`.).
+
+For example, you should be able to view the page you just created by going to `http://localhost:1313/get-started/`.
 
 8. Push these changes to your remote fork
 ```
@@ -68,6 +76,8 @@ git push origin main
 ```
 https://kbatuigas.github.io/sdg-docs-code-template/
 ```
+
+(Note that this will change the path of your local Hugo server to `http://localhost:1313/sdg-docs-code-template/`. The Get Started page will now be at `http://localhost:1313/sdg-docs-code-template/get-started/`.)
 
 2. When you're happy with how the site looks locally, do a build:
 ```
@@ -110,6 +120,8 @@ git push origin gh-pages
 
 Your project pages should be live in a short while at the URL provided in your remote Settings.
 
+So, you'll be pushing changes in your project source code _and_ docs source code to the `main` branch, but each time you do a build of your docs site, the built pages will be pushed up via the `gh-pages` branch only.
+
 ## When you want to update the published docs
 
 1. Remove worktree
@@ -117,7 +129,7 @@ Your project pages should be live in a short while at the URL provided in your r
 git checkout main
 git worktree remove public
 ```
-2. Commit desired updates in `main` and push up to remote.
+2. Commit desired updates in `main` and push up to remote. (Try to add a homepage for your docs by running this command in your `docs` directory: `hugo new _index.md`, which will add a new `_index.md` file in the `content` subdirectory.)
 3. Add the worktree with the `gh-pages` branch again for the `public` subdirectory.
 4. Remove contents of `public` and regenerate the site by doing a new build
 ```
