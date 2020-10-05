@@ -133,7 +133,7 @@ git worktree remove public
 3. Add the worktree with the `gh-pages` branch again for the `public` subdirectory.
 4. Remove contents of `public` and regenerate the site by doing a new build
 ```
-rm -rf public
+rm -rf public/*
 hugo
 ```
 5. Switch to `gh-pages` branch, commit the new build, then push to remote
